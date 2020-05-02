@@ -1,0 +1,30 @@
+#security:
+#  oauth2:
+#    client:
+#      id: salesforce
+#      clientAuthenticationScheme: form
+#      authenticationScheme: header
+#      grantType: authorization_code
+#      accessTokenUri: https://login.salesforce.com/services/oauth2/token
+#      userAuthorizationUri: https://login.salesforce.com/services/oauth2/authorize
+#      clientId: ${SF_CLIENT_ID}
+#      clientSecret: ${SF_CLIENT_SECRET}
+#      username: ${SF_USERNAME}
+#      password: ${SF_PASSWORD}
+#    resource:
+#      userInfoUri: https://login.salesforce.com/services/oauth2/userinfo
+#
+#logging:
+#  level:
+#    web: DEBUG
+#
+#salesforce:
+#  liveagent:
+#    deploymentUrl: https://d.la1-c2cs-frf.salesforceliveagent.com
+#    presenceStatusKey: Chat
+#    presenceStatusId: ${SF_LIVEAGENT_STATUS_ID}
+#    organisationId: ${SF_LIVEAGENT_ORGANISATION_ID}
+#  customerService:
+#    deploymentId: ${SF_CUSTOMER_SERVICE_DEPLOYMENT_ID}
+#    availabilityId: ${SF_CUSTOMER_SERVICE_AVAILABILITY_ID}
+
